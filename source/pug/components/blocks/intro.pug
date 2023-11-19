@@ -1,0 +1,24 @@
+mixin intro()
+  .intro(data-animate="intro")
+    .intro__sticky
+      .intro__bg
+        video(src="img/video/background-wave.mp4" muted autoplay loop playsinline)
+      .container(data-animate="intro-content")
+        .intro__top
+          h1.intro__title.title.words.lines.splitting(data-splitting) Ростислав Белоусов<br>фронтенд-разработчик<br>
+
+          p.intro__text.words.lines.splitting(data-splitting) Мои навыки,<br>компетенции<br>и портфолио.
+
+        ul.intro__cards-list
+          li.intro__cards-item
+            a.card-simple(href="#experience")
+              h2.card-simple__title.title.title--h3 Опыт<br>коммерческой разработки
+          li.intro__cards-item
+            a.card-simple(href="#projects")
+              h2.card-simple__title.title.title--h3 Проекты
+          li.intro__cards-item
+            a.card-simple(href="#certificates")
+              h2.card-simple__title.title.title--h3 Дипломы и сертификаты
+          li.intro__cards-item
+            a.card-simple(href="#scroll")
+              h2.card-simple__title.title.title--h3 Список навыков и контакты

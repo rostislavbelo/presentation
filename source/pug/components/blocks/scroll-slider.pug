@@ -1,0 +1,26 @@
+mixin scroll-slider()
+  .scroll-slider(data-scroll-slider="parent")&attributes(attributes)
+    section.scroll-slider__sticky(id="scroll-slider" data-scroll-slider="sticky")
+     .scroll-slider__slide.is-active(data-scroll-slider="slide")
+        .container
+          .content-block.content-block--centered
+            h2 Мои ключевые навыки:
+            p HTML5, CSS3, Sass, Less, Pug(Jade), Адаптивная вёрстка, Кроссбраузерная вёрстка, Вёрстка под CMS, Анимации, JavaScript, TypeScript, ReactJS(functional component), Redux, MobX, RegExp, Figma, GSAP, Git, БЭМ, Gulp, Webpack, Axios
+        .scroll-slider__bg(style="background-image: url('img/svg/architect-bg.svg')")
+     .scroll-slider__slide(data-scroll-slider="slide")
+        .container
+          .content-block.content-block--centered
+            h2 Мои любимые направления в работе:
+            p Творить WEB-красоту, нестандартные проекты, анимации, трудные кейсы, учиться.
+        .scroll-slider__bg(style="background-image: url('img/svg/squares-bg.svg')")
+     .scroll-slider__slide(data-scroll-slider="slide")
+        .container
+          .content-block.content-block--centered
+            h2 Мои контакты:
+            p Telegram:&emsp;
+              a(href="https://t.me/rostislavbel" aria-label="Связаться в Телеграм") rostislavbel
+            p Email:&emsp;
+              a(href="mailto:rabelousov@gmail.com") rabelousov@gmail.com
+        .scroll-slider__bg(style="background-image: url('img/svg/plus-bg.svg')")
+
+

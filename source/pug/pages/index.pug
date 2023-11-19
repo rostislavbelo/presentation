@@ -1,0 +1,21 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "Самопрезентация"
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = false
+  - const hasLoader = true
+  - const footerMods = ""
+  - const currentUrl = "index.html"
+
+block main
+  main
+    +intro()
+    +section(dataSection1)(id="experience")
+    +section(dataSection2)(id="projects")
+    +section(dataSection3)(id="certificates")
+    +scroll-slider()(id="scroll")
+
+block modals

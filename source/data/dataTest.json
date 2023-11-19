@@ -1,0 +1,15 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+      {"type": "Feature", "id": 0, "geometry": {"type": "Point", "coordinates": [55.831903, 37.411961]}, "properties": {"balloonContent": "Аптека", "clusterCaption": "Аптека", "hintContent": "Аптека", "iconCaption": "Аптека"}, "options": {"preset": "islands#blueCircleDotIconWithCaption"}},
+      {"type": "Feature", "id": 1, "geometry": {"type": "Point", "coordinates": [55.763338, 37.565466]}, "properties": {"balloonContent": "Аптека", "clusterCaption": "Аптека", "hintContent": "Аптека", "iconCaption": "Аптека"}, "options": {"preset": "islands#blueCircleDotIconWithCaption"}},
+      {"type": "Feature", "id": 2, "geometry": {"type": "Point", "coordinates": [55.863193, 37.737]}, "properties": {"balloonContent": "Школа", "clusterCaption": "Школа", "hintContent": "Школа", "iconCaption": "Школа"}, "options": {"preset": "islands#greenCircleDotIconWithCaption"}},
+      {"type": "Feature", "id": 3, "geometry": {"type": "Point", "coordinates": [55.86677, 37.760113]}, "properties": {"balloonContent": "Школа", "clusterCaption": "Школа", "hintContent": "Школа", "iconCaption": "Школа"}, "options": {"preset": "islands#greenCircleDotIconWithCaption"}},
+      {"type": "Feature", "id": 4, "geometry": {"type": "Point", "coordinates": [55.698261, 37.730838]}, "properties": {"balloonContent": "Больница", "clusterCaption": "Больница", "hintContent": "Больница", "iconCaption": "Больница"}, "options": {"preset": "islands#blackCircleDotIconWithCaption"}},
+      {"type": "Feature", "id": 5, "geometry": {"type": "Point", "coordinates": [55.6338, 37.564769]}, "properties": {"balloonContent": "Больница", "clusterCaption": "Больница", "hintContent": "Больница", "iconCaption": "Больница"}, "options": {"preset": "islands#blackCircleDotIconWithCaption"}},
+      {"type": "Feature", "id": 6, "geometry": {"type": "Point", "coordinates": [55.664352, 37.689397]}, "properties": {"balloonContent": "Магазин", "clusterCaption": "Магазин", "hintContent": "Магазин", "iconCaption": "Магазин"}, "options": {"preset": "islands#yellowCircleDotIconWithCaption"}},
+      {"type": "Feature", "id": 7, "geometry": {"type": "Point", "coordinates": [55.83866, 37.712326]}, "properties": {"balloonContent": "Магазин", "clusterCaption": "Магазин", "hintContent": "Магазин", "iconCaption": "Магазин"}, "options": {"preset": "islands#yellowCircleDotIconWithCaption"}},
+      {"type": "Feature", "id": 8, "geometry": {"type": "Point", "coordinates": [55.774838, 37.415725]}, "properties": {"balloonContent": "Бар", "clusterCaption": "Бар", "hintContent": "Бар", "iconCaption": "Бар"}, "options": {"preset": "islands#violetCircleDotIconWithCaption"}},
+      {"type": "Feature", "id": 9, "geometry": {"type": "Point", "coordinates": [55.871539, 37.630223]}, "properties": {"balloonContent": "Бар", "clusterCaption": "Бар", "hintContent": "Бар", "iconCaption": "Бар"}, "options": {"preset": "islands#violetCircleDotIconWithCaption"}}
+  ]
+}

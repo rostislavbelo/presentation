@@ -1,0 +1,75 @@
+-
+  const dataSection1 = {
+    title: "Опыт коммерческой разработки",
+    content: [
+      "<b>Стажировка в компании Лига-А</b>",
+      "С марта 2022г и по настоящее тружусь исполнителем на проектах по ТЗ и макетам заказчиков, в составе команды стажеров и штатных разработчиков Лиги-А.",
+      "Принял участие в качестве разработчика в более чем 12 проектах.",
+      "Выполнял задачи по семантической адаптивной вёрстке страниц и блоков под CMS, в соответствии с критериями качества Лиги-А.",
+      "Писал JavaScript код для реализации задач на проектах.",
+      "Наработал существенный опыт в вёрстке, анимациях, в работе с библиотеками, с картографическими сервисами: Google Map, Яндекс карты и OpenStreetMap.",
+      "Воплотил в коде много творческих задач и специфических пожеланий требовательных заказчиков.",
+    ],
+    link: ["<b>Контакты компании Лига-А:</b>", "https://ligaa.agency/#footer"],
+    cards: [],
+  }
+
+  const dataSection2 = {
+    title: "Мои учебные проекты",
+    content: [
+      "<b>Выполненные на курсах HTML Академии, в Скиллбоксе, и просто для саморазвития.</b>",
+      "Важно: сейчас, благодаря стажировке, мой уровень разработчика уже существенно выше этих проектов.",
+    ],
+    cards: [
+      ["fade", "https://pomodor-timer-rostislav.vercel.app/", "pomodoro", "Моё первое React приложение. Таймер планирования задач по системе 'Помодоро' с аналитикой. Итоговая работа по курсу React в Скиллбокс."],
+      ["fade", "https://rostislavbelo.github.io/hotelcats/build/", "hotelcats", "Сайт гостиницы для кошек. Адаптивная вёрстка. Учебный проект по макету из HTML Академии."],
+      ["fade-in", "https://rostislavbelo.github.io/cat-energy-adaptive/", "catenergy", "Сайт магазина здорового питания для кошек. Адаптивная вёрстка. Учебный проект по макету из HTML Академии."],
+      ["fade-in", "https://rostislavbelo.github.io/belousov_way/build/", "way", "Сайт бюро путешествий. Адаптивная вёрстка. Проверочный проект при грейдировании выпускников и отборе на стажировку в Лигу-А."],
+      ["fade-scale", "https://rostislavbelo.github.io/1621457-keksobooking-23/", "keksobooking", "Сайт бронирования отелей. Учебный проект по курсу JavaScript HTML Академии. Работа с картами Openstreetmap, внешними API, фильтацией данных"],
+      ["fade-scale", "https://rostislavbelo.github.io/belousov_jewellery/build/main.html", "jewellery", "Сайт ювелирного магазина. Итоговый проект в Акселераторе, при отборе на стажировку в Лигу-А."],
+      ["fade", "https://rostislavbelo.github.io/pink-adaptive/", "pink", "Сайт фотоконкурса. Адаптивная вёрстка. Учебный проект по макету из HTML Академии."],
+      ["fade", "https://rostislavbelo.github.io/belousov_velo-moon/build/", "moon", "Лендинг веломагазина. Адаптивная вёрстка. Проект в Акселераторе, при отборе на стажировку в Лигу-А."],
+      ["fade-in", "https://rostislavbelo.github.io/belousov_smart-device/build/", "smartdevice", "Лендинг произвоственной компании. Адаптивная вёрстка. Проект в Акселераторе, при отборе на стажировку в Лигу-А."],
+      ["fade-in", "https://rostislavbelo.github.io/1621457-nerds-30/index.html", "nerds", "Сайт дизайн-студии. Моя самая первая работа. Фиксированная вёрстка для desktop. Учебный проект по макету из HTML Академии."],
+    ],
+  }
+
+  const dataSection3 = {
+    grid: "type-3",
+    title: "Сертификаты об обучении",
+    content: [
+      "Успешно окончил курс HTML Академии по професии Фронтенд разработчик и курс Силлбокс по ReactJS.",
+    ],
+    cards: [
+      ["fade-scale-reverce", "https://assets.htmlacademy.ru/certificates/intensive/193/1621457.pdf?1616760559", "certificate-1"],
+      ["fade-scale-reverce", "https://assets.htmlacademy.ru/certificates/intensive/199/1621457.pdf?1621784652", "certificate-2"],
+      ["fade-scale-reverce", "https://assets.htmlacademy.ru/certificates/intensive/205/1621457.pdf?1627072300", "certificate-3"],
+      ["fade-scale-reverce", "https://assets.htmlacademy.ru/certificates/profession/23/1621457.pdf?1627072312", "certificate-5"],
+      ["fade-scale-reverce", "https://cdn.skillbox.pro/certgen/certificates/7/IzioeuVKd2spimn2G1omwbjSkHVv45JF.png?utm_source=expertsender&utm_medium=email&utm_content=kingreturn&utm_campaign=all_all_expertsender_email_calendar_course_all_all_skillbox&utm_term=autoresponder", "certificate-4"],
+    ],
+  }
+
+mixin section(data)
+  section.section&attributes(attributes)
+    .container
+      .content-block
+        h2 !{data.title}
+        each item in data.content
+          p !{item}
+        if data.link
+          p !{data.link[0]}
+          a(href=data.link[1] target="_blank" aria-label="Перейти на страницу")
+            +icon("liga-logo", 192, 24)
+        if data.cards.length
+          .section__cards-container(class = data.grid === "type-3" ?  "section__cards-container--grid-3" : "")
+            each item in data.cards
+              .card-simple.card-simple--link(data-animate=`${item[0]}`)
+                if item.length > 1
+                  a.card-simple__link(href=item[1] target="_blank" aria-label="Перейти на страницу")
+                  +img("content/projects", href=item[2], "jpg", 500, 250, "rrr")
+                  if item[3]
+                    .card-simple__prompt
+                      span !{item[3]}
+                else
+                  p !{item[0]}
+
