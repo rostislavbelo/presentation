@@ -15,21 +15,23 @@
   }
 
   const dataSection2 = {
-    title: "Мои учебные проекты",
+    title: "Мои проекты",
     content: [
       "<b>Выполненные на курсах HTML Академии, в Скиллбоксе, и просто для саморазвития.</b>",
-      "Очень важно: сейчас, благодаря стажировке, мой уровень разработчика уже существенно выше этих проектов. А коммерческие проекты Лига А не разрешает размещать в портфолио (по NDA)",
+      "<b>Очень важно:</b> сейчас, благодаря стажировке, мой уровень разработчика уже существенно выше этих проектов. А коммерческие проекты Лига А не разрешает размещать в портфолио (по NDA).",
     ],
+    top: ["fade-scale", "https://virtual-reality-rostislav.vercel.app", "virtual-reality", "Проверочный проект, который необходимо самостоятельно выполнить для допуска к работе с коммерческими проектами в Лиге А. Подтверждение требуемого уровня разработчика."],
     cards: [
-      ["fade", "https://rostislavbelo.github.io/hotelcats/build/", "hotelcats", "Сайт гостиницы для кошек. Адаптивная вёрстка. Учебный проект по макету из HTML Академии."],
-      ["fade-in", "https://rostislavbelo.github.io/cat-energy-adaptive/", "catenergy", "Сайт магазина здорового питания для кошек. Адаптивная вёрстка. Учебный проект по макету из HTML Академии."],
-      ["fade", "https://pomodor-timer-rostislav.vercel.app/", "pomodoro", "Моё первое React приложение. Таймер планирования задач по системе 'Помодоро' с аналитикой. Итоговая работа по курсу React в Скиллбокс."],
-      ["fade-in", "https://rostislavbelo.github.io/belousov_way/build/", "way", "Сайт бюро путешествий. Адаптивная вёрстка. Проверочный проект при грейдировании выпускников и отборе на стажировку в Лигу-А."],
+      //-["fade-in", "https://virtual-reality-rostislav.vercel.app", "virtual-reality", "Тестовый проект, который необходимо самостоятельно выполнить для допуска к работе с коммерческими проектами в Лиге А."],
+      ["fade-scale", "https://rostislavbelo.github.io/hotelcats/build/", "hotelcats", "Сайт гостиницы для кошек. Адаптивная вёрстка. Учебный проект по макету из HTML Академии."],
+      ["fade-scale", "https://rostislavbelo.github.io/cat-energy-adaptive/", "catenergy", "Сайт магазина здорового питания для кошек. Адаптивная вёрстка. Учебный проект по макету из HTML Академии."],
+      ["fade-scale", "https://pomodor-timer-rostislav.vercel.app/", "pomodoro", "Моё первое React приложение. Таймер планирования задач по системе 'Помодоро' с аналитикой. Итоговая работа по курсу React в Скиллбокс."],
+      ["fade-scale", "https://rostislavbelo.github.io/belousov_way/build/", "way", "Сайт бюро путешествий. Адаптивная вёрстка. Проверочный проект при грейдировании выпускников и отборе на стажировку в Лигу А."],
       ["fade-scale", "https://rostislavbelo.github.io/1621457-keksobooking-23/", "keksobooking", "Сайт бронирования отелей. Учебный проект по курсу JavaScript HTML Академии. Работа с картами Openstreetmap, внешними API, фильтацией данных"],
-      ["fade-scale", "https://rostislavbelo.github.io/belousov_jewellery/build/main.html", "jewellery", "Сайт ювелирного магазина. Итоговый проект в Акселераторе, при отборе на стажировку в Лигу-А."],
-      ["fade", "https://rostislavbelo.github.io/pink-adaptive/", "pink", "Сайт фотоконкурса. Адаптивная вёрстка. Учебный проект по макету из HTML Академии."],
-      ["fade", "https://rostislavbelo.github.io/belousov_velo-moon/build/", "moon", "Лендинг веломагазина. Адаптивная вёрстка. Проект в Акселераторе, при отборе на стажировку в Лигу-А."],
-      ["fade-in", "https://rostislavbelo.github.io/belousov_smart-device/build/", "smartdevice", "Лендинг произвоственной компании. Адаптивная вёрстка. Проект в Акселераторе, при отборе на стажировку в Лигу-А."],
+      ["fade-scale", "https://rostislavbelo.github.io/belousov_jewellery/build/main.html", "jewellery", "Сайт ювелирного магазина. Итоговый проект в Акселераторе, при отборе на стажировку в Лигу А."],
+      ["fade-scale", "https://rostislavbelo.github.io/pink-adaptive/", "pink", "Сайт фотоконкурса. Адаптивная вёрстка. Учебный проект по макету из HTML Академии."],
+      ["fade-scale", "https://rostislavbelo.github.io/belousov_velo-moon/build/", "moon", "Лендинг веломагазина. Адаптивная вёрстка. Проект в Акселераторе, при отборе на стажировку в Лигу А."],
+      ["fade-in", "https://rostislavbelo.github.io/belousov_smart-device/build/", "smartdevice", "Лендинг произвоственной компании. Адаптивная вёрстка. Проект в Акселераторе, при отборе на стажировку в Лигу А."],
       ["fade-in", "https://rostislavbelo.github.io/1621457-nerds-30/index.html", "nerds", "Сайт дизайн-студии. Моя самая первая работа. Фиксированная вёрстка для desktop. Учебный проект по макету из HTML Академии."],
     ],
   }
@@ -60,13 +62,20 @@ mixin section(data)
           p !{data.link[0]}
           a(href=data.link[1] target="_blank" aria-label="Перейти на страницу")
             +icon("liga-logo", 192, 24)
+        if data.top
+          .card-simple.card-simple--link(data-animate=data.top[0])
+            a.card-simple__link(href=data.top[1] target="_blank" aria-label="Перейти на страницу")
+            +img("content/projects", href=data.top[2], "jpg", 500, 250, "Превью")
+            .card-simple__prompt
+              span !{data.top[3]}
+
         if data.cards.length
           .section__cards-container(class = data.grid === "type-3" ?  "section__cards-container--grid-3" : "")
             each item in data.cards
               .card-simple.card-simple--link(data-animate=`${item[0]}`)
                 if item.length > 1
                   a.card-simple__link(href=item[1] target="_blank" aria-label="Перейти на страницу")
-                  +img("content/projects", href=item[2], "jpg", 500, 250, "rrr")
+                  +img("content/projects", href=item[2], "jpg", 500, 250, "Превью")
                   if item[3]
                     .card-simple__prompt
                       span !{item[3]}

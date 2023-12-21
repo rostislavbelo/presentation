@@ -60,7 +60,7 @@
     top: 0;
     background-color: rgba($color-default-black, 0.75);
     width: 101%;
-    height:  0;
+    height: 0;
     padding: 15px;
     z-index: 9;
     overflow: hidden;
@@ -72,10 +72,12 @@
     span {
       display: block;
       color: $color-default-white;
+      text-align: center;
+      font-size: 18px;
+
+      @include vp-1023 {
+        font-size: 16px;
+      }
     }
-
   }
-
-
-
 }
